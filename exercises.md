@@ -3,10 +3,10 @@
 > **Bài làm cá nhân.** Trả lời bằng lời của chính bạn, dựa trên những gì bạn
 > quan sát được khi chạy code — không sao chép đáp án của người khác.
 >
-> Cách trả lời: thay dòng `> *Câu trả lời của bạn*` bằng câu trả lời.
+> Cách trả lời: thay dòng `> *Câu trả lời của bạn:*` bằng câu trả lời.
 > `grade.py` đếm số câu đã trả lời (15 điểm cho 10 câu).
 >
-> Họ và tên: Ngụy Quang Hưng  Mã học viên: 2A202602998
+> Họ và tên: Ngụy Quang Hùng  Mã học viên: 2A202602998
 
 ---
 
@@ -40,10 +40,10 @@ docker build -t agent:multi .
 docker images | grep agent
 ```
 
-| Bản | Dung lượng |
-|-----|-----------|
-| 1 stage (bản đầu) | ~1000 MB |
-| Multi-stage | ~150 MB |
+| Bản                 | Dung lượng |
+| -------------------- | ------------ |
+| 1 stage (bản đầu) | ~1000 MB     |
+| Multi-stage          | ~150 MB      |
 
 Giải thích: phần dung lượng chênh lệch đó là những gì?
 
@@ -87,7 +87,8 @@ con số đó.
 Hai cơ chế này khác nhau ở điểm nào? Cho một tình huống mà rate limit cho qua
 nhưng cost guard phải chặn, và một tình huống ngược lại.
 
-> *Câu trả lời của bạn:* Rate Limit chặn theo số lượng tần suất request, còn Cost Guard chặn theo tổng chi phí. 
+> *Câu trả lời của bạn:* Rate Limit chặn theo số lượng tần suất request, còn Cost Guard chặn theo tổng chi phí.
+>
 > 1. Rate Limit cho qua nhưng Cost Guard chặn: User chỉ gửi 1 request nhưng đính kèm lượng text khổng lồ tốn cực nhiều token. Số lượng chưa bị limit chặn, nhưng số tiền vượt ngân sách tháng nên Cost Guard chặn.
 > 2. Cost Guard cho qua nhưng Rate Limit chặn: User gửi 50 request trong 1 phút, mỗi request chỉ dài 1 từ (tốn cực ít tiền). Tổng tiền vẫn an toàn, nhưng spam quá nhanh nên Rate Limit chặn.
 
