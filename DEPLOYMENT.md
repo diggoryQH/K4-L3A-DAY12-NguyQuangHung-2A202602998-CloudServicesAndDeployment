@@ -10,7 +10,7 @@
 
 | Mục | Nội dung |
 |-----|----------|
-| Họ và tên | Ngụy Quang Hưng |
+| Họ và tên | Ngụy Quang Hùng |
 | Mã học viên | 2A202602998 |
 | Repo | https://github.com/diggoryQH/K4-L3A-DAY12-NguyQuangHung-2A202602998-CloudServicesAndDeployment |
 
